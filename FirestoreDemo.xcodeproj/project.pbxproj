@@ -13,9 +13,15 @@
 		D3A8D71D292A8036008262C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3A8D71B292A8036008262C7 /* Main.storyboard */; };
 		D3A8D71F292A803C008262C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3A8D71E292A803C008262C7 /* Assets.xcassets */; };
 		D3A8D722292A803C008262C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3A8D720292A803C008262C7 /* LaunchScreen.storyboard */; };
+		D3B99D39292A8791007BA0FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3B99D38292A8791007BA0FD /* GoogleService-Info.plist */; };
+		D3B99D3C292A953E007BA0FD /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D3B99D3B292A953E007BA0FD /* FirebaseFirestore */; };
+		D3B99D3E292A953E007BA0FD /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = D3B99D3D292A953E007BA0FD /* FirebaseFirestoreCombine-Community */; };
+		D3B99D40292A953E007BA0FD /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D3B99D3F292A953E007BA0FD /* FirebaseFirestoreSwift */; };
+		DC3CE5602129FAA868CFBEC6 /* Pods_FirestoreDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 082D47A8C7C387885F6CD71C /* Pods_FirestoreDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		082D47A8C7C387885F6CD71C /* Pods_FirestoreDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirestoreDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A8D712292A8036008262C7 /* FirestoreDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirestoreDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A8D715292A8036008262C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3A8D717292A8036008262C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,9 @@
 		D3A8D71E292A803C008262C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3A8D721292A803C008262C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3A8D723292A803C008262C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3B99D38292A8791007BA0FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D56697AE79ED7C165014B2D0 /* Pods-FirestoreDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirestoreDemo.release.xcconfig"; path = "Target Support Files/Pods-FirestoreDemo/Pods-FirestoreDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F6266934C20B4EBC4BA9DC12 /* Pods-FirestoreDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirestoreDemo.debug.xcconfig"; path = "Target Support Files/Pods-FirestoreDemo/Pods-FirestoreDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +40,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3B99D3E292A953E007BA0FD /* FirebaseFirestoreCombine-Community in Frameworks */,
+				DC3CE5602129FAA868CFBEC6 /* Pods_FirestoreDemo.framework in Frameworks */,
+				D3B99D3C292A953E007BA0FD /* FirebaseFirestore in Frameworks */,
+				D3B99D40292A953E007BA0FD /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		278D66AAB1E0F7D268920919 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6266934C20B4EBC4BA9DC12 /* Pods-FirestoreDemo.debug.xcconfig */,
+				D56697AE79ED7C165014B2D0 /* Pods-FirestoreDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D3A8D709292A8036008262C7 = {
 			isa = PBXGroup;
 			children = (
 				D3A8D714292A8036008262C7 /* FirestoreDemo */,
 				D3A8D713292A8036008262C7 /* Products */,
+				278D66AAB1E0F7D268920919 /* Pods */,
+				E400C5484642D4AA2555C71E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +87,17 @@
 				D3A8D71E292A803C008262C7 /* Assets.xcassets */,
 				D3A8D720292A803C008262C7 /* LaunchScreen.storyboard */,
 				D3A8D723292A803C008262C7 /* Info.plist */,
+				D3B99D38292A8791007BA0FD /* GoogleService-Info.plist */,
 			);
 			path = FirestoreDemo;
+			sourceTree = "<group>";
+		};
+		E400C5484642D4AA2555C71E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				082D47A8C7C387885F6CD71C /* Pods_FirestoreDemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +107,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3A8D726292A803C008262C7 /* Build configuration list for PBXNativeTarget "FirestoreDemo" */;
 			buildPhases = (
+				E65761AA09E7CFD512FC1EC0 /* [CP] Check Pods Manifest.lock */,
 				D3A8D70E292A8036008262C7 /* Sources */,
 				D3A8D70F292A8036008262C7 /* Frameworks */,
 				D3A8D710292A8036008262C7 /* Resources */,
@@ -83,6 +117,11 @@
 			dependencies = (
 			);
 			name = FirestoreDemo;
+			packageProductDependencies = (
+				D3B99D3B292A953E007BA0FD /* FirebaseFirestore */,
+				D3B99D3D292A953E007BA0FD /* FirebaseFirestoreCombine-Community */,
+				D3B99D3F292A953E007BA0FD /* FirebaseFirestoreSwift */,
+			);
 			productName = FirestoreDemo;
 			productReference = D3A8D712292A8036008262C7 /* FirestoreDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +150,9 @@
 				Base,
 			);
 			mainGroup = D3A8D709292A8036008262C7;
+			packageReferences = (
+				D3B99D3A292A953D007BA0FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = D3A8D713292A8036008262C7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,12 +168,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3A8D722292A803C008262C7 /* LaunchScreen.storyboard in Resources */,
+				D3B99D39292A8791007BA0FD /* GoogleService-Info.plist in Resources */,
 				D3A8D71F292A803C008262C7 /* Assets.xcassets in Resources */,
 				D3A8D71D292A8036008262C7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E65761AA09E7CFD512FC1EC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FirestoreDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D3A8D70E292A8036008262C7 /* Sources */ = {
@@ -282,6 +350,7 @@
 		};
 		D3A8D727292A803C008262C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6266934C20B4EBC4BA9DC12 /* Pods-FirestoreDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +379,7 @@
 		};
 		D3A8D728292A803C008262C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D56697AE79ED7C165014B2D0 /* Pods-FirestoreDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -358,6 +428,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D3B99D3A292A953D007BA0FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D3B99D3B292A953E007BA0FD /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3B99D3A292A953D007BA0FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		D3B99D3D292A953E007BA0FD /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3B99D3A292A953D007BA0FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		D3B99D3F292A953E007BA0FD /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3B99D3A292A953D007BA0FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D3A8D70A292A8036008262C7 /* Project object */;
 }
